@@ -136,6 +136,10 @@ Root cause: the 90° stationary-turn threshold was too conservative. When approa
 
 ---
 
-## Background
+## Roadmap
 
-Built as a learning project to practice C fundamentals relevant to embedded and robotics development. Focuses on understanding the mathematical models behind differential-drive robots rather than relying on existing libraries.
+- [ ] Makefile for one-command build.
+- [ ] Obstacle avoidance — geometric collision detection against simple static obstacles.
+- [ ] Gaussian noise injection — simulate real-world sensor drift and odometry error accumulation.
+- [ ] PID controller — replace the current P controller with full PID (integral + derivative terms) to reduce steady-state error and overshoot.
+- [ ] Multi-robot simulation — run multiple Robot instances in parallel, each following independent paths.
