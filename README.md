@@ -117,7 +117,9 @@ All cases start at `(0.0, 0.0, 0°)` unless noted.
 | case8 | `(2.5,5) → (4,4.5) → (4,3.5) → (1,1) → (4.5,1)` | Approximates the digit "2", start at `(1.0, 4.0)` |
 
 Trajectory plots: *(insert screenshots here)*
-
+| case7 — Rhombus | case8 — Digit "2" |
+|---|---|
+| ![Rhombus Test Result](./TestImages/test_result_7.png) | ![Digit 2 Test Result](TestImages/test_result_8.png) |
 ---
 
 ## Development Notes
