@@ -76,16 +76,6 @@ Neither `diffDrive` nor `step` affect the simulation output — they are include
 
 ---
 
-## Build & Run
-
-```bash
-make
-./robot
-python3 plot.py
-```
-
----
-
 ## Key Parameters
 
 | Parameter | Value | Description |
