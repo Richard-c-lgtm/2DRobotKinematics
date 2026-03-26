@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 
-csv_path = '/Users/chenhao/Desktop/C++/C++ Program/C+++/Project_1/2DRobotKinematics-epacaldzkbkcplcncqkobtwygijf/Build/Products/Debug/trajectory.csv'
+csv_path = 'trajectory.csv'
 
 cases = {
     3: [(5.0, 0.0), (5.0, 5.0), (0.0, 5.0)],
