@@ -123,13 +123,3 @@ Trajectory plots:
 **Test 3** — Program exceeded the trajectory buffer limit (300,000 steps) without reaching the final waypoint. Forced an early exit with `trajSave` to inspect the partial trajectory. Visualization confirmed the robot was on track but stalled near the last waypoint. Initially suspected low linear velocity — added a minimum speed floor of `0.5 m/s` when `dist > 0.01`. Robot still stalled, ruling out speed as the cause.
 
 Root cause: the 90° stationary-turn threshold was too conservative. When approaching at a shallow angle near the final waypoint, the robot kept entering the stationary turn zone and barely advancing. Fixed by lowering the stationary turn threshold from 90° to 40°, and introducing the blended motion zone (10°–40°) where `v = cos(angleDiff) * dist` smoothly scales linear velocity with alignment — the better aligned, the faster it moves forward.
-
----
-
-## Roadmap
-
-- [ ] Makefile for one-command build.
-- [ ] Obstacle avoidance — geometric collision detection against simple static obstacles.
-- [ ] Gaussian noise injection — simulate real-world sensor drift and odometry error accumulation.
-- [ ] PID controller — replace the current P controller with full PID (integral + derivative terms) to reduce steady-state error and overshoot.
-- [ ] Multi-robot simulation — run multiple Robot instances in parallel, each following independent paths.
